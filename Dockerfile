@@ -17,6 +17,8 @@ RUN pip install --upgrade pip \
     && pip install tensorflow==1.14 \
     && pip install opencv-python \
     && pip install protobuf \
+    && pip install pandas \
+    && pip install openpyxl \
     && pip install jupyter \
     && pip install -r ./tf-pose-estimation/requirements.txt \
     && bash ./tf-pose-estimation/models/graph/cmu/download.sh \
