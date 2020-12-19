@@ -1,0 +1,6 @@
+tensorflow==1.14
+opencv-python
+protobuf
+pandas
+openpyxl
+jupyter
