@@ -59,5 +59,11 @@ class AnalyzeHuman:
         self._df = self._df.append(row, ignore_index=True)
         return self._df
 
+    def append_none_human_points(self, frame_name):
+
+        row = self._create_row(frame_name, [])
+        self._df = self._df.append(row, ignore_index=True)
+        return self._df
+
     def save_points(self, path):
         self._df.to_excel(path)
